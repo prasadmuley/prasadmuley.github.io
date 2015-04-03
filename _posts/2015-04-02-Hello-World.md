@@ -35,4 +35,4 @@ I love python programming, photography, painting/sketching, Bike riding and Trek
 I am available on github, twitter, instagram and quora.
 
 
-#### Say Hi [@rootpy](twitter.com/rootpy)
+#### Say Hi [@rootpy](https://twitter.com/rootpy)
