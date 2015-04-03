@@ -21,5 +21,8 @@ Minimal Mistakes takes advantage of Sass and data files to make customizing easi
   *  Create your **First** Post inside **_posts**
   *  Modify **CNAME** or remove it
   *  Commit and Push changes on github
-  *  Check your first post **github_username.github.io*
+  *  Check your first post **github_username.github.io**
+
+Report bug if you find any 
+
 
