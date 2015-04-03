@@ -27,11 +27,12 @@ So *I've decided to test it using **Hello World!***
 >**"Blooging is not rocket science, it's about being yourself and putting what you have into it."**
 
 I read this quote somewhere. Being Software Developer, I'll write some **technical** posts here.
-I'll also try to write **non-technical** posts. Let's what I **write**. I hope you'll enjoy my posts.
+I'll also try to write **non-technical** posts. Let's see what I **write**. I'll enjoy a lot by writting posts. I hope you'll too.
 
 #### Feel free to connect me.
 
-I love python programming, photography, painting and sketching.
-I look forward to meet you.
+I love python programming, photography, painting/sketching, Bike riding and Trekking.
+I am available on github, twitter, instagram and quora.
 
 
+#### Say Hi [@rootpy](twitter.com/rootpy)

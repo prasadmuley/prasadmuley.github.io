@@ -1,7 +1,5 @@
 My personal website [rootpy.com](rootpy.com) using **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)**
 
-##### Minimal Mistakes
-
 **Minimal Mistakes** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog. 
 
 ## Minimal Mistakes is all about:
