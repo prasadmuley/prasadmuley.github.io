@@ -24,10 +24,10 @@ As I am not familiar with **jekyll** and **minimal-mistakes** theme.
 So *I've decided to test it using **Hello World!***
 
 
->**"Blooging is not rocket science, it's about being yourself and putting what you have into it."**
+>**"Blogging is not rocket science, it's about being yourself and putting what you have into it."**
 
 I read this quote somewhere. Being Software Developer, I'll write some **technical** posts here.
-I'll also try to write **non-technical** posts. Let's see what I **write**. I'll enjoy a lot by writting posts. I hope you'll too.
+I'll also try to write **non-technical** posts. Let's see what I **write**. I'll enjoy a lot by writing posts. I hope you'll too.
 
 #### Feel free to connect me.
 
