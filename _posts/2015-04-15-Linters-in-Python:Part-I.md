@@ -20,23 +20,10 @@ Let's see about **what is linter** first and pep8 later.
 *  [**Lint**](http://en.wikipedia.org/wiki/Lint_%28software%29) refers to a general class of programming tools which
 analyze the source code and raise warning and errors about it.
 *  It simply means *linter is a [**Static**](http://en.wikipedia.org/wiki/Static_program_analysis) code analyzer.*
-*  **For example:**
+*  **Examples:**
    *  [**Syntax errors**](https://docs.python.org/2/tutorial/errors.html)
-   *  It also points out **unused/undeclared variables** and calls to [**deprecated**](http://en.wikipedia.org/wiki/Deprecation) functions.
-
-*  **Advantages:**
-   *  Detect and Prevent a large class of **programming errors.**
-   *  Code review is done easily by addressing many mechanical and formatting problems automatically.
-
-
-### [**PEP8:**](https://www.python.org/dev/peps/pep-0008/)
-
-*  It is style guidelines for python. We can call it as **simple python style checker**.
-*  It checks your **python** code against style guidelines which are defined in pep8.
-*  **For example:**
-   *  **4 space** indents.
-   *  **line too long** i.e greater than *79* characters.
-   *  **expected 1 blank line, found 0**
+   *  It also points out **unused/undeclared variables**.
+   *  Reports calls to [**deprecated**](http://en.wikipedia.org/wiki/Deprecation) functions.
 
 *  **Linters for Python Programming:**
    *  [PyChecker](http://pychecker.sourceforge.net/)
@@ -44,6 +31,20 @@ analyze the source code and raise warning and errors about it.
    *  [Flake8](https://pypi.python.org/pypi/flake8)
    *  [PyLama](https://github.com/klen/pylama)
    *  [PyLint](http://www.pylint.org/)
+
+*  **Advantages:**
+   *  Detect and Prevent a large class of **programming errors.**
+   *  Code review is done easily by addressing many mechanical and formatting problems automatically.
+
+### [**PEP8:**](https://www.python.org/dev/peps/pep-0008/)
+
+*  It is style guidelines for python. We can call it as **simple python style checker**.
+*  It checks your **python** code against style guidelines which are defined in pep8.
+*  **Examples:**
+   *  **4 space** indents.
+   *  **line too long** i.e greater than *79* characters.
+   *  **expected 1 blank line, found 0**
+
 *  **Advantages:**
    * Code style consistency.
    * Improve code readability.
