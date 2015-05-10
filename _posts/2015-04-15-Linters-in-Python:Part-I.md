@@ -118,4 +118,4 @@ This is the main difference between linter and pep8.
 
 
 Pylint also checks code against pep8 style guide and reports pep8 errors.
-I'll explain available linters for Python in next part.
+I'll explain available linters for Python in [next part](http://rootpy.com/Linters-in-Python:Part-II/).
