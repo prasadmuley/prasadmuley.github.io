@@ -22,8 +22,9 @@ We'll see various linters available in python with sample example.
    *  [PyLama](https://github.com/klen/pylama)
 
 ### Sample program:
-  I've written a error-prone program. It contains some unused imported modules, variable etc and pep8 errors.
-  It also overriddes one function. Let's see output of each linter.
+  I've written a error-prone program. It contains some unused imported modules, variables and arguments.
+  It also overriddes one function. I've intentionally not followed [pep8's guidelines](https://pep8.readthedocs.org/en/latest/).
+  Let's see output of each linter.
 
 {% highlight python %}
 #!/usr/bin/env python
@@ -70,8 +71,10 @@ class User(object):
 
 ###[PyChecker](http://pychecker.sourceforge.net/)
 * It imports each module and compiles the each function, class and method for possible errors.
-* It determines the imported modules, classes and functions. It creates a tree based on it.
+* It determines the imported modules, classes and functions and creates a tree based on it.
 * It can't process the module if there is an import error.
+* It compiles and executes the imported module so your code get executed.
+  * For example: If you've SQL queries in python program then it executes every time which is bad (IMO)
 * Let's pass the sample_program.py and analyze the output.
 {% highlight bash %}
 prasad@Rootpy: master ⚡
@@ -98,20 +101,18 @@ $
 Here, 
 
   * It detects following errors:
-    * unused imported module, local variable, arguments error.
+    * unused imported module, local variable and arguments errors.
     * self is argument in function 
   * But it doesn't  detect following errors: 
     * unused global variable user_name.
     * pep8 related errors (some linters detect it).
-  * It compiles and executes the imported module so your code get executed.
-  * For example: If you've SQL queries in python program then it executes every time which is bad.
   * It becomes slower than other linters because it imports all the modules and execute it one by one.
   * You can create configure it by creating configuration file (.pycheckerr)
   * Check [here](http://legacy.python.org/workshops/2002-02/papers/02/index.htm) for more information
 
 ###[PyFlake](https://pypi.python.org/pypi/pyflakes)
 * It is a static code analyzer as It identifies errors without executing python code.
-* It is faster than [PyChecker](http://pychecker.sourceforge.net/) because It doesn't import any module and execute it.
+* It is faster than [PyChecker](http://pychecker.sourceforge.net/) because it doesn't import any module and execute it.
 * Let's see output for sample_program.py
 {% highlight bash %}
 prasad@Rootpy: master ⚡
@@ -131,7 +132,7 @@ $
 
 Here, 
 
-  * It detects unused imported module, local variable, arguments errors.
+  * It detects unused imported module, local variable and arguments related errors.
   * It doesn't detect following errors:
     * Unused global variable user_name.
     * pep8 style guide related error.
@@ -174,10 +175,10 @@ Here,
  * Check flake8's [docs](https://flake8.readthedocs.org/en/2.3.0/) for more information.
 
 ###[PyLint](http://www.pylint.org/)
-  * It is a static code analyzer i.e It checks errors in python code.
+  * It is a static code analyzer which checks errors in python code.
   * It looks for bad codes and tries to enforce a coding standard.
   * It displays statistics about the number of warnings and errors found in different files.
-  * It also gives overall mark, based on numbers of warnings and errors.
+  * It also gives overall mark, based on numbers of warnings and errors. Some key features as below:
   * Refactoring:
      * It also detects duplicates codes.
   * Fully Customizable:
@@ -188,15 +189,15 @@ Here,
      * Editor Integration are available for various editors like [emacs](http://www.emacswiki.org/emacs/PythonProgrammingInEmacs#toc8), [vim](http://www.vim.org/scripts/script.php?script_id=891) and [eclipse](http://pydev.org/)
      * IDE integration are also available for various IDEs like [spyder](https://pythonhosted.org/spyder/pylint.html), [editra](https://code.google.com/p/editra-plugins/wiki/PyAnalysis) and [TextMate](http://blogs.ethz.ch/halfdome_by_night/2008/04/26/pylint-command-in-textmate/)
      * Check [list of supported editors and IDEs](http://docs.pylint.org/ide-integration)
-  * error messages type:
-     * [**R**]efactor for a “good practice” metric violation
-     * [**C**]onvention for coding standard violation
-	 * [**W**]arning for stylistic problems, or minor programming issues
-	 * [**E**]rror for important programming issues (i.e. most probably bug)
-	 * [**F**]atal for errors which prevented further processing.
-   * It gives very descriptive output. The output is divided into two categories message and reports.
+  * It gives very descriptive output. The output is divided into two categories message and reports.
      * message contains warnings, errors, coding standard convention, Refactoring and Fatal errors.
-     * Reports contains statistics information for by type, raw metrics, duplication, message by category etc.
+       * error messages type:
+         * [**R**]efactor for a “good practice” metric violation
+         * [**C**]onvention for coding standard violation
+	     * [**W**]arning for stylistic problems, or minor programming issues
+	     * [**E**]rror for important programming issues (i.e. most probably bug)
+	     * [**F**]atal for errors which prevented further processing.
+         * Reports contains statistics information for by type, raw metrics, duplication, message by category etc.
    * Let's run pylint on sample_program.py and check the output.
 
 {% highlight bash%}
@@ -339,16 +340,16 @@ $
 
 Here,
 
-   * It detects highest errors compared to other linters.
-     Following messages are reported:
+   * It detects highest number of errors compared to other linters.
+     Following errors which are detected by all other linters as well as PyLint:
      * unused variables, imported modules, arguments etc.
      * Invalid variable name, method name etc.
-   * Above errors mostly detected by all linters But it detects some special messages which other linters don't detect:
+   * But there is a lot of differnece between Pylint's output and other's output. 
+     It detects following errors which other linters don't detect.:
      * Unreachable code
      * Redefining built in int and str
      * unused global variable user_name which other linters are failed to detect.
      * missing doc strings.
-   * This makes a difference between pylint and other linters.
    * Report contains various statistics information which is useful for programmer.
    * It's awesome code rating. It has given -2.7 rating to sample program. (OMG)
    * Pylint has great [documentation](http://docs.pylint.org/). Every thing is well explained.
