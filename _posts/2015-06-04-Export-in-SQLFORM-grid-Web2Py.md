@@ -386,6 +386,12 @@ def index():
 * It skipped company column in exported csv file. So we can skip any column using the fields parameter.
 
 #### Summery
-* You can use these hacks in the SQLFORM.grid's export. The sample app is available here.
-  Kindly report bug if you find any.
+* In this blog post, We've learned following things:
+  * How to use the export functionality.
+  * Show specified format using exportclasses
+  * Repositioning the export button.
+  * Display name instead of ids.
+  * Changing the header names.
+  * Skipping columns while exporting the data.
 
+I've used web2py's 2.9 version in above post. The sample app is available here. Report bug if you find any.
