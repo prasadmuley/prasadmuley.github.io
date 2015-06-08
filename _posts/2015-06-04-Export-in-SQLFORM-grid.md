@@ -75,6 +75,7 @@ url: http://127.0.0.1:8000/sample_app/default/index
 {% endhighlight %}
 
 > Screenshot of Index page.
+
 <figure style="display: block;">
 	<a href="http://rootpy.com/images/sample_app_index.png"><img class="image_border" src="http://rootpy.com/images/sample_app_index.png"></a>
 	<figcaption><a href="http://rootpy.com/images/sample_app_index.png">The SQLFORM.grid provides various export option like CSV, JSON, HTML etc</a>.</figcaption>
@@ -110,6 +111,7 @@ def index():
 {% endhighlight %}
 
 > It shows only CSV format and doesn't show other formats.
+
 <figure style="display: block;">
 	<a href="http://rootpy.com/images/sample_app_only_csv.png"><img class="image_border" src="http://rootpy.com/images/sample_app_only_csv.png"></a>
 	<figcaption><a href="http://rootpy.com/images/sample_app_only_csv.png">Export: CSV format is available only</a>.</figcaption>
@@ -142,6 +144,7 @@ def index():
 {% endhighlight %}
 
 > Save layout.html and refresh the index.html page.
+
 <figure style="display: block;">
 	<a href="http://rootpy.com/images/sample_app_export_to_CSV.png"><img class="image_border" src="http://rootpy.com/images/sample_app_export_to_CSV.png"></a>
 	<figcaption><a href="http://rootpy.com/images/sample_app_export_to_CSV.png">Export to CSV button is available next to clear</a>.</figcaption>
@@ -363,6 +366,7 @@ def index():
 {% endhighlight %}
 
 > The SQLFORM.grid shows all column names.
+
 <figure style="display: block;">
 	<a href="http://rootpy.com/images/sample_app_skip_rows.png"><img class="image_border" src="http://rootpy.com/images/sample_app_skip_rows.png"></a>
 	<figcaption><a href="http://rootpy.com/images/sample_app_skip_rows.png">It shows company column name which will skip in export</a>.</figcaption>
