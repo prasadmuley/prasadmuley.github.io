@@ -6,19 +6,19 @@ tags: [export, web2py, hack, SQLFORM, grid, javascript, button]
 comments: true
 ---
 
-[Web2Py's](http://web2py.com/) SQLFORM.grid is a very powerful plugin for managing complex CRUD operations. It provides several operations like create, update, delete, search, sort and browser records. It also gives pagination for large records. It is well explained here.
+[Web2Py's](http://web2py.com/) SQLFORM.grid is a very powerful plugin for managing complex CRUD operations. It provides several operations like create, update, delete, search, sort and browser records. It also gives pagination for large records. It is well explained [here](http://web2py.com/books/default/chapter/29/07/forms-and-validators?search=SQLFORM.grid#SQLFORM-grid-and-SQLFORM-smartgrid).
 
 ### Export functionality
 * The export is one of the most useful functionalities of the SQLFORM.grid.
 * You can easily export your data in various format like CSV, JSON etc.
 * The SQLFORM.grid supports following format:
-   *  CSV
+   *  [CSV](http://en.wikipedia.org/wiki/Comma-separated_values)
    *  CSV(hidden columns)
-   *  HTML
-   *  JSON
-   *  TSV
+   *  [HTML](http://en.wikipedia.org/wiki/HTML)
+   *  [JSON](http://en.wikipedia.org/wiki/JSON)
+   *  [TSV](http://en.wikipedia.org/wiki/Tab-separated_values)
    *  TSV(hidden columns)
-   *  XML
+   *  [XML](http://en.wikipedia.org/wiki/XML)
 
 I'll explain some useful hacks in this export functionality. Create a app called sample_app using appadmin or PyDAL's shell.
 Let's create two tables in database first.
