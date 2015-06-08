@@ -76,8 +76,8 @@ url: http://127.0.0.1:8000/sample_app/default/index
 
 > Screenshot of Index page.
 <figure style="display: block;">
-	<a href="http://127.0.0.1:4000/images/sample_app_index.png"><img class="image_border" src="http://127.0.0.1:4000/images/sample_app_index.png"></a>
-	<figcaption><a href="http://127.0.0.1:4000/images/sample_app_index.png">The SQLFORM.grid provides various export option like CSV, JSON, HTML etc</a>.</figcaption>
+	<a href="http://rootpy.com/images/sample_app_index.png"><img class="image_border" src="http://rootpy.com/images/sample_app_index.png"></a>
+	<figcaption><a href="http://rootpy.com/images/sample_app_index.png">The SQLFORM.grid provides various export option like CSV, JSON, HTML etc</a>.</figcaption>
 </figure>
 
 * It shows various export type like CSV, JSON, HTML etc. But what if user wants to see only CSV format.
@@ -111,8 +111,8 @@ def index():
 
 > It shows only CSV format and doesn't show other formats.
 <figure style="display: block;">
-	<a href="http://127.0.0.1:4000/images/sample_app_only_csv.png"><img class="image_border" src="http://127.0.0.1:4000/images/sample_app_only_csv.png"></a>
-	<figcaption><a href="http://127.0.0.1:4000/images/sample_app_only_csv.png">Export: CSV format is available only</a>.</figcaption>
+	<a href="http://rootpy.com/images/sample_app_only_csv.png"><img class="image_border" src="http://rootpy.com/images/sample_app_only_csv.png"></a>
+	<figcaption><a href="http://rootpy.com/images/sample_app_only_csv.png">Export: CSV format is available only</a>.</figcaption>
 </figure>
 
 * Position of CSV button at the bottm of grid looks odd for user. What if user wants CSV button after search button.
@@ -143,8 +143,8 @@ def index():
 
 > Save layout.html and refresh the index.html page.
 <figure style="display: block;">
-	<a href="http://127.0.0.1:4000/images/sample_app_export_to_CSV.png"><img class="image_border" src="http://127.0.0.1:4000/images/sample_app_export_to_CSV.png"></a>
-	<figcaption><a href="http://127.0.0.1:4000/images/sample_app_export_to_CSV.png">Export to CSV button is available next to clear</a>.</figcaption>
+	<a href="http://rootpy.com/images/sample_app_export_to_CSV.png"><img class="image_border" src="http://rootpy.com/images/sample_app_export_to_CSV.png"></a>
+	<figcaption><a href="http://rootpy.com/images/sample_app_export_to_CSV.png">Export to CSV button is available next to clear</a>.</figcaption>
 </figure>
 * Here,
     Web2Py adds all export links inside w2p_export_menu class.
@@ -364,8 +364,8 @@ def index():
 
 > The SQLFORM.grid shows all column names.
 <figure style="display: block;">
-	<a href="http://127.0.0.1:4000/images/sample_app_skip_rows.png"><img class="image_border" src="http://127.0.0.1:4000/images/sample_app_skip_rows.png"></a>
-	<figcaption><a href="http://127.0.0.1:4000/images/sample_app_skip_rows.png">It shows company column name which will skip in export</a>.</figcaption>
+	<a href="http://rootpy.com/images/sample_app_skip_rows.png"><img class="image_border" src="http://rootpy.com/images/sample_app_skip_rows.png"></a>
+	<figcaption><a href="http://rootpy.com/images/sample_app_skip_rows.png">It shows company column name which will skip in export</a>.</figcaption>
 </figure>
 
 * Let's Click on Export to CSV and check whether company column is skipped or not.
@@ -394,4 +394,4 @@ def index():
   * Changing the header names.
   * Skipping columns while exporting the data.
 
-I've used web2py's 2.9 version in above post. The sample app is available here. Report bug if you find any.
+I've used web2py's 2.9 version in above post. The sample app is available [here](https://github.com/prasadmuley/Web2Py/tree/master/Export_in_SQLFORM.grid/sample_app). Report bug if you find any.
