@@ -5,7 +5,7 @@ tags: [about, prasad, muley, rootpy]
 comments: true
 ---
 
-* Currently, I am working as a Software Developer at [OneDelta](onedelta.in). Exploring [Python](https://www.python.org/), [Web2Py](http://web2py.com/) and [PyDAL](https://github.com/web2py/pydal).
+* Currently, I am working as a Social Media Developer at [shopsocially](shopsocially.com). Exploring [Python](https://www.python.org/), [Pylons](http://www.pylonsproject.org/), [MongoDB](https://www.mongodb.org/) and Javascript. I've command on [Web2Py](http://www.web2py.com/), [PyDAL](https://github.com/web2py/pydal) and [Git](https://git-scm.com/).
 
 * I've completed my bachelors in Information Technology from [Pune Institute of Computer Technology, Pune](http://pict.edu/), Batch of 2013.
 
