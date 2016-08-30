@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Continuouse delivery
+title: Continuous delivery
 excerpt: Releasing production changes frequently and faster using VCS.
 tags: [release, engineering, startup, production, version control, git]
 comments: true
@@ -21,12 +21,12 @@ It must go through all phases even if it's a simple fix or an enhancement/big fe
 
 
   You've to design it in such way that everyone will able to follow standard practices and guidelines.
-Your project should be clean no matter how many releases you've.
+Your project should clean no matter how many releases you've.
 Okay. We agree on above points. So where do we FOCUS for development workflow?
 
 
 > In continuouse delivery, You've to deliver a set of fixes / enhancements / features in short period.
-To achieve this, multiple developers need to be worked simultaneously.
+To achieve this, multiple developers need to work simultaneously.
 
 ### The Version control WAY
 
@@ -40,7 +40,7 @@ otherwise they would agree on above point.
 
 ### Why version control plays important role.
 
-* Developers can work on simultaneously without stepping toeing each other legs.
+* Developers can work on simultaneously without stepping on each others legs.
 * Ability to go back in older version quickly.
 * Track metadata about changes.
 * Developer can test his/her code thoroughly and share it with colleagues.
@@ -49,13 +49,13 @@ otherwise they would agree on above point.
 > When you've releases in every week, You have to make sure that public branch like master shouldn't have broken changes.
   Also there is no point to deploy and test code which is broken. 
 
-We've been follow codebase's [merge request flow](https://support.codebasehq.com/articles/repositories/creating-a-merge-request) at [ShopSocially](shopsocially.com). It's similar to github's [pull request flow](https://help.github.com/articles/about-pull-requests/).
+We've been following codebase's [merge request flow](https://support.codebasehq.com/articles/repositories/creating-a-merge-request) at [ShopSocially](shopsocially.com). It's similar to github's [pull request flow](https://help.github.com/articles/about-pull-requests/).
 
 
 ### How is merge request flow helping in continuous delivery / releases?
 Most of the times, developers get conflicts whenever they merge their code into target branch.
 It's expected due to multiple colleagues are working simultaneously.
-Production release get delay due to conflicts at target branch like develop.
+Production release gets delay due to conflicts at target branch like develop.
 
 Merge request helps to take a call whether to merge your branch or rebase it
 
@@ -77,7 +77,7 @@ You're lucky and reviewer can easily merge your code in target branch.
 * In this case, You've to do rebase with target branch.
 * Developer has to fix conflicts in his/her branch.
 * It's far better than manually merging multiple branches in target branch.
-  Because conflicts need to resolve in public branch like develop.
+  Because conflicts need to be resolved by developers in public branch like develop.
 
 Now we come to know that how is merge request helping in continuous delivery.
 
