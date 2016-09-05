@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using generators in Python
-excerpt: "The pythonic way when you're too much result"
+excerpt: "The pythonic way when you've too much result"
 tags: [python, programming, beginner, list, code, MapReduce, MongoDB]
 comments: true
 language: python
