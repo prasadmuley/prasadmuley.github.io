@@ -1,0 +1,37 @@
+[user]
+	email = pmmuley@gmail.com
+	name = Prasad Muley
+
+[core]
+	editor = emacs24
+
+[alias]
+    # https://git.wiki.kernel.org/index.php/Aliases
+	st = status
+    ci = commit
+    co = checkout
+	df = diff
+    br = branch
+    cp = cherry-pick
+    rb = rebase
+    undo = reset --hard
+
+    # simple log
+	lg = log
+
+    # display current branch's log message
+    ls = log master..HEAD
+
+    # display log as well as changes 
+    lc = log ORIG_HEAD.. --stat --no-merges
+
+    # display number of commits of contributor (descending order)
+    rank = shortlog -sn --no-merges
+
+    # display number of commits (merged in master) of contributor
+    rank-with-merges = shortlog -sn
+
+	# display changes of branch compared to master
+	br-diff = diff master..HEAD
+[push]
+	default = tracking
